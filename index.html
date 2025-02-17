@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Background Image</title>
+    <style>
+        .box {
+            background-image: url(download.jpeg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        
+        @media only screen and (min-width: 0px) and (max-width: 375px) {
+            .box {
+                background-image: url(download.webp);
+            }
+        }
+
+        
+        @media only screen and (min-width: 375px) and (max-width: 770px) {
+            .box {
+                background-image: url(mamooty.jpeg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+
